@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="/stylesheets/indexStyle.css">
+<div class="container " style="width: 450px;">
+  <div class="login-div text-center shadow">
+    <div class="mt-3 pt-5 h2">Account Login</div>
+    <form action="/" method="POST">
+      <input id="email" class="d-block mt-5 mx-auto" type="text" placeholder="Email" name="email"
+        {{#if email }} value="{{email}}" {{/if}}>
+      <input id="password" class="d-block mt-4 mx-auto" type="password" placeholder="Password"
+        name="password">
+      <button type="submit" class="btn btn-outline-info mt-5 mb-5">Sign in</button>
+    </form>
+  </div>
+</div>

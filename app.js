@@ -43,8 +43,20 @@ app.use(express.urlencoded({ extended: true }))
 
 // 設定首頁路由
 app.get('/', (req, res) => {
-  res.render('index')
+  res.render('login')
 })
+
+app.post('/', (req, res) => {
+  const [email, password] = [req.body.email, req.body.password]
+  const user = users.find((user) => {
+    if (user.email === email && user.password === password) {
+      return true
+    }
+  })
+  if (user) res.render('index', { firstName: user.firstName })
+  else res.render('login', { email })
+})
+
 // 設定 port 3000
 app.listen(PORT, () => {
   console.log('App is running on http://localhost:3000')
