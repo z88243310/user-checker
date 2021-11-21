@@ -4,6 +4,7 @@ const exphbs = require('express-handlebars')
 const app = express()
 const PORT = 3000
 
+// firstName: 'Tony',email: 'tony@stark.com', password: 'iamironman',
 const users = [
   {
     firstName: 'Tony',
@@ -35,6 +36,9 @@ const users = [
 // handlebars
 app.engine('hbs', exphbs({ defaultLayout: 'main', extname: '.hbs' }))
 app.set('view engine', 'hbs')
+
+//設定 body-parser
+app.use(express.urlencoded({ extended: true }))
 
 // 設定首頁路由
 app.get('/', (req, res) => {
