@@ -36,6 +36,7 @@ const users = [
 // handlebars
 app.engine('hbs', exphbs({ defaultLayout: 'main', extname: '.hbs' }))
 app.set('view engine', 'hbs')
+app.use(express.static('public'))
 
 //設定 body-parser
 app.use(express.urlencoded({ extended: true }))
