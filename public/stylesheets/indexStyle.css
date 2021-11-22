@@ -1,11 +1,174 @@
-.login-div {
+/* use the css load */
+#floatingCirclesG {
   position: relative;
-  top: 100px;
-  background-color: rgb(248, 241, 230);
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  transform: scale(0.6);
+  -o-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
 }
 
-#email,
-#password {
-  height: 40px;
-  width: 240px;
+.f_circleG {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  height: 13px;
+  width: 13px;
+  border-radius: 7px;
+  -o-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  animation-name: f_fadeG;
+  -o-animation-name: f_fadeG;
+  -ms-animation-name: f_fadeG;
+  -webkit-animation-name: f_fadeG;
+  -moz-animation-name: f_fadeG;
+  animation-duration: 0.882s;
+  -o-animation-duration: 0.882s;
+  -ms-animation-duration: 0.882s;
+  -webkit-animation-duration: 0.882s;
+  -moz-animation-duration: 0.882s;
+  animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-direction: normal;
+  -o-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+}
+
+#frotateG_01 {
+  left: 0;
+  top: 29px;
+  animation-delay: 0.3295s;
+  -o-animation-delay: 0.3295s;
+  -ms-animation-delay: 0.3295s;
+  -webkit-animation-delay: 0.3295s;
+  -moz-animation-delay: 0.3295s;
+}
+
+#frotateG_02 {
+  left: 8px;
+  top: 8px;
+  animation-delay: 0.446s;
+  -o-animation-delay: 0.446s;
+  -ms-animation-delay: 0.446s;
+  -webkit-animation-delay: 0.446s;
+  -moz-animation-delay: 0.446s;
+}
+
+#frotateG_03 {
+  left: 29px;
+  top: 0;
+  animation-delay: 0.5525s;
+  -o-animation-delay: 0.5525s;
+  -ms-animation-delay: 0.5525s;
+  -webkit-animation-delay: 0.5525s;
+  -moz-animation-delay: 0.5525s;
+}
+
+#frotateG_04 {
+  right: 8px;
+  top: 8px;
+  animation-delay: 0.659s;
+  -o-animation-delay: 0.659s;
+  -ms-animation-delay: 0.659s;
+  -webkit-animation-delay: 0.659s;
+  -moz-animation-delay: 0.659s;
+}
+
+#frotateG_05 {
+  right: 0;
+  top: 29px;
+  animation-delay: 0.7755s;
+  -o-animation-delay: 0.7755s;
+  -ms-animation-delay: 0.7755s;
+  -webkit-animation-delay: 0.7755s;
+  -moz-animation-delay: 0.7755s;
+}
+
+#frotateG_06 {
+  right: 8px;
+  bottom: 8px;
+  animation-delay: 0.882s;
+  -o-animation-delay: 0.882s;
+  -ms-animation-delay: 0.882s;
+  -webkit-animation-delay: 0.882s;
+  -moz-animation-delay: 0.882s;
+}
+
+#frotateG_07 {
+  left: 29px;
+  bottom: 0;
+  animation-delay: 0.9985s;
+  -o-animation-delay: 0.9985s;
+  -ms-animation-delay: 0.9985s;
+  -webkit-animation-delay: 0.9985s;
+  -moz-animation-delay: 0.9985s;
+}
+
+#frotateG_08 {
+  left: 8px;
+  bottom: 8px;
+  animation-delay: 1.105s;
+  -o-animation-delay: 1.105s;
+  -ms-animation-delay: 1.105s;
+  -webkit-animation-delay: 1.105s;
+  -moz-animation-delay: 1.105s;
+}
+
+@keyframes f_fadeG {
+  0% {
+    background-color: rgb(0, 0, 0);
+  }
+
+  100% {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+@-o-keyframes f_fadeG {
+  0% {
+    background-color: rgb(0, 0, 0);
+  }
+
+  100% {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+@-ms-keyframes f_fadeG {
+  0% {
+    background-color: rgb(0, 0, 0);
+  }
+
+  100% {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+@-webkit-keyframes f_fadeG {
+  0% {
+    background-color: rgb(0, 0, 0);
+  }
+
+  100% {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+@-moz-keyframes f_fadeG {
+  0% {
+    background-color: rgb(0, 0, 0);
+  }
+
+  100% {
+    background-color: rgb(255, 255, 255);
+  }
 }

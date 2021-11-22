@@ -54,7 +54,7 @@ app.post('/', (req, res) => {
     }
   })
   if (user) res.render('index', { firstName: user.firstName })
-  else res.render('login', { email })
+  else res.render('login', { email, error: true })
 })
 
 // 設定 port 3000

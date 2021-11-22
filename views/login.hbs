@@ -1,13 +1,19 @@
-<link rel="stylesheet" href="/stylesheets/indexStyle.css">
+<link rel="stylesheet" href="/stylesheets/loginStyle.css">
 <div class="container " style="width: 450px;">
   <div class="login-div text-center shadow">
     <div class="mt-3 pt-5 h2">Account Login</div>
     <form action="/" method="POST">
-      <input id="email" class="d-block mt-5 mx-auto" type="text" placeholder="Email" name="email"
-        {{#if email }} value="{{email}}" {{/if}}>
-      <input id="password" class="d-block mt-4 mx-auto" type="password" placeholder="Password"
-        name="password">
-      <button type="submit" class="btn btn-outline-info mt-5 mb-5">Sign in</button>
+      <input id="email-input" class="d-block mt-5 mx-auto" type="text" placeholder="Email"
+        name="email" {{#if email }} value="{{email}}" {{/if}} required>
+      <input id="password-input" class="d-block mt-4 mx-auto" type="password" placeholder="Password"
+        name="password" required>
+      {{#if error}}
+        <div class="alert alert-danger fixed-top" role="alert">
+          Please provide a valid email address and password.
+        </div>
+      {{/if}}
+      <button type="submit" class="btn btn-info mt-5 mb-5">Sign in</button>
     </form>
   </div>
 </div>
+<script src="/javasripts/loginStyle.js"></script>
