@@ -9,3 +9,24 @@
   height: 35px;
   width: 220px;
 }
+
+.password-container {
+  position: relative;
+  height: 50px;
+}
+
+#password-display {
+  position: absolute;
+  left: calc(50% + 90px);
+  transform: translateX(-50%);
+  top: 10px;
+}
+#password-display:hover {
+  color: gray;
+}
+
+#password-input {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

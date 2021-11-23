@@ -7,6 +7,11 @@ const PORT = 3000
 // firstName: 'Tony',email: 'tony@stark.com', password: 'iamironman',
 const users = [
   {
+    firstName: 'test',
+    email: 'test',
+    password: 'test',
+  },
+  {
     firstName: 'Tony',
     email: 'tony@stark.com',
     password: 'iamironman',
@@ -47,14 +52,12 @@ app.get('/', (req, res) => {
 })
 
 app.post('/', (req, res) => {
-  const [email, password] = [req.body.email, req.body.password]
-  const user = users.find((user) => {
-    if (user.email === email && user.password === password) {
-      return true
-    }
-  })
-  if (user) res.render('index', { firstName: user.firstName })
-  else res.render('login', { email, error: true })
+  const { email, password } = req.body
+  const user = users.find((user) => user.email === email && user.password === password)
+
+  if (user) {
+    res.render('index', { firstName: user.firstName })
+  } else res.render('login', { email, error: true })
 })
 
 // 設定 port 3000
