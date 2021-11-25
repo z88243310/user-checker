@@ -1,4 +1,5 @@
 const alertDanger = document.querySelector('.alert-danger')
+const emailInput = document.querySelector('#email-input')
 const passwordInput = document.querySelector('#password-input')
 const passwordDisplay = document.querySelector('#password-display')
 
@@ -23,4 +24,17 @@ passwordDisplay.addEventListener('click', function onPasswordDisplayClicked() {
     this.classList.add('fa-eye')
     this.classList.remove('fa-eye-slash')
   }
+})
+
+// clear space
+function onInputEnterKey(event) {
+  target = event.target
+  target.value = target.value.replace(/\s+/g, '')
+}
+
+emailInput.addEventListener('keyup', (event) => {
+  onInputEnterKey(event)
+})
+passwordInput.addEventListener('keyup', (event) => {
+  onInputEnterKey(event)
 })
